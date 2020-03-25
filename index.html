@@ -52,6 +52,7 @@
             border-left:25px solid transparent;
             border-right:25px solid transparent;
             border-top:25px solid #ec523e;
+            margin-left:5px;
         }
         
         .arrow-down:hover { border-top:25px solid #bc4131; }
@@ -112,18 +113,26 @@
         $(".btn-df").click(function(){
             $( ".bow" ).hide();
             $(".graph-df").show();
+            $( ".bow-link" ).removeClass( "selected" );
+            $( ".bow-df" ).addClass( "selected" );
         });
         $(".btn-tx").click(function(){
             $( ".bow" ).hide();
             $(".graph-tx").show();
+            $( ".bow-link" ).removeClass( "selected" );
+            $( ".bow-tx" ).addClass( "selected" );
         });
         $(".btn-lx").click(function(){
             $( ".bow" ).hide();
             $(".graph-lx").show();
+            $( ".bow-link" ).removeClass( "selected" );
+            $( ".bow-lx" ).addClass( "selected" );
         });
         $(".btn-v").click(function(){
             $( ".bow" ).hide();
             $(".graph-v").show();
+            $( ".bow-link" ).removeClass( "selected" );
+            $( ".bow-v" ).addClass( "selected" );
         });
         
         
